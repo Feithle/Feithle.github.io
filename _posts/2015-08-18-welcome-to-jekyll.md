@@ -14,7 +14,18 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-var value="sit"
+package Analyze;
+import java.util.List;
+import com.hankcs.hanlp.HanLP;
+/**
+ * @author 28558
+ *根据文章内容提取关键字
+ */
+public class KeyWord {
+	public List<String> getKeyWord(String convert) {
+		return HanLP.extractKeyword(convert,1);
+	}
+}
 def print_hi(name)
   puts "Hi, #{name}"
 end
