@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!！"
 date:   2015-08-18 15:07:19
 categories: [tutorial]
+excerpt: "Welcome to Jekyll,let's begain with this awesome excerpt!"
 comments: true
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -14,6 +15,18 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
+package Analyze;
+import java.util.List;
+import com.hankcs.hanlp.HanLP;
+/**
+ * @author 28558
+ *根据文章内容提取关键字
+ */
+public class KeyWord {
+	public List<String> getKeyWord(String convert) {
+		return HanLP.extractKeyword(convert,1);
+	}
+}
 def print_hi(name)
   puts "Hi, #{name}"
 end
@@ -26,3 +39,4 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
+
