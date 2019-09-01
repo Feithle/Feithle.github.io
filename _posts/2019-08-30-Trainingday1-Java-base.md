@@ -11,12 +11,9 @@ excerpt: "  "
 #### 输入几个数字，求平均值
 > 1)要求：实现基本功能，***注释，命名***
 
- `code`:
->
+`code`:
 <% highlight ruby %>
-
 import java.util.Scanner;
-
 public class avage {
 	public static void main(String args[]){
 
@@ -34,12 +31,8 @@ public class avage {
         }
         System.out.println();
         System.out.println("平均分数为："+(float)sum/list1.length);
-
     }
-
 }
-
-
 <% endhighlight %>
 
 
