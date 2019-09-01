@@ -3,7 +3,6 @@ layout: post
 title: "开发培训课程，Java基础"
 categories: [contest]
 excerpt: "  "
-
 ---
 
 # 开发培训课程，Java基础
@@ -11,7 +10,6 @@ excerpt: "  "
 #### 输入几个数字，求平均值
 > 1)要求：实现基本功能，***注释，命名***
 
-`code`:
 <% highlight ruby %>
 import java.util.Scanner;
 public class avage {
