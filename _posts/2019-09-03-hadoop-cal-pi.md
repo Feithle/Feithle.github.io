@@ -42,7 +42,7 @@ public class Pi {
 			// TODO Auto-generated method stub
 			int pointNum = Integer.parseInt(value.toString());
 			
-			for (int i = 0; i < pointNum; i++) {
+			for (int i = 0; i < pointNum; i++) {//生成pointNum个点
 				//get random number
 				double x = rd.nextDouble();
 				double y = rd.nextDouble();
@@ -52,7 +52,7 @@ public class Pi {
 				double distance = Math.sqrt(x*x + y*y);
 				IntWritable result = new IntWritable(0);
 				
-				if (distance <= 0.5) {
+				if (distance <= 0.5) {//判断该点是否在扇形区域内
 					result = new IntWritable(1);
 				}
 				context.write(value, result);
@@ -68,9 +68,9 @@ public class Pi {
 			double pointNum  = Double.parseDouble(key.toString());
 			double sum = 0;
 			for (IntWritable val : values) {
-				sum+=val.get();
+				sum+=val.get();//合计落在扇形区域的点的总数
 			}
-			resule.set(sum/pointNum*4);
+			resule.set(sum/pointNum*4);//计算pi
 			context.write(key, resule);
 		}
 	}
