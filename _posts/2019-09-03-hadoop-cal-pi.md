@@ -2,6 +2,7 @@
 layout: post
 date: 2019-09-03 14:00:00
 title: "hadoop 计算 pi"
+categories: [tutorial]
 excerpt: "随机点法计算圆周率，生成的随机点越多得到的pi值越精确"
 ---
 
