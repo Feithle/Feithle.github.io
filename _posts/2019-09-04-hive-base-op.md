@@ -8,7 +8,7 @@
 >
 >（1）启动hive
 >
-> [atguigu@hadoop102 hive]$ bin/hive
+> `[atguigu@hadoop102 hive]$ bin/hive`
 >
 >（2）查看数据库
 >
