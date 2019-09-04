@@ -5,7 +5,9 @@
 >
 #### 命令
 > Hive基本操作
+
 >（1）启动hive
+
 > [atguigu@hadoop102 hive]$ bin/hive
 >（2）查看数据库
 > `hive> show databases;`
