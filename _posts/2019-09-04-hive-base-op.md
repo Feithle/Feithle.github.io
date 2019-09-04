@@ -4,15 +4,15 @@
 >Hive的出现可以让非java编程者对hdfs的数据做mapreduce操作。
 >
 #### 命令
->Hive基本操作
+> Hive基本操作
 >（1）启动hive
->[atguigu@hadoop102 hive]$ bin/hive
+> [atguigu@hadoop102 hive]$ bin/hive
 >（2）查看数据库
->`hive> show databases;`
+> `hive> show databases;`
 >（3）打开默认数据库
->`hive> use default;`
+> `hive> use default;`
 >（4）显示default数据库中的表
->`hive> show tables;`
+> `hive> show tables;`
 >（5）创建一张表
 >`hive> create table student(id int, name string);`
 >（6）显示数据库中有几张表
