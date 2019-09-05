@@ -95,7 +95,7 @@ A^B|	A和B按位取异或
 **案例实操**
 查询出薪水大于1000的所有员工
 
-` select * from emp where sal >1000;`
+ `select * from emp where sal >1000;`
 ### 比较运算符（Between/In/ Is Null）
     下面表中描述了谓词操作符，这些操作符同样可以用于JOIN…ON和HAVING语句中。
 操作符|支持的数据类型|描述
@@ -126,7 +126,7 @@ A RLIKE B, A REGEXP B|	STRING 类型|	B是一个正则表达式，如果A与其�
  `select * from emp where comm is null;`
 4. 查询工资是1500或5000的员工信息
 
-  ` select * from emp where sal IN (1500, 5000);`
+ `select * from emp where sal IN (1500, 5000);`
 ### Like和RLike
 * 使用LIKE运算选择类似的值
 * 选择条件可以包含字符或数字:
@@ -134,15 +134,15 @@ A RLIKE B, A REGEXP B|	STRING 类型|	B是一个正则表达式，如果A与其�
 _ 代表一个字符。
 * RLIKE子句是Hive中这个功能的一个扩展，其可以通过Java的正则表达式这个更强大的语言来指定匹配条件。
 **案例实操**
-	（1）查找以2开头薪水的员工信息
+（1）查找以2开头薪水的员工信息
 
-` select * from emp where sal LIKE '2%';`
-	（2）查找第二个数值为2的薪水的员工信息
+  `select * from emp where sal LIKE '2%';`
+（2）查找第二个数值为2的薪水的员工信息
 
-`select * from emp where sal LIKE '_2%';`
-	（3）查找薪水中含有2的员工信息
+ `select * from emp where sal LIKE '_2%';`
+（3）查找薪水中含有2的员工信息
 
-` select * from emp where sal RLIKE '[2]';`
+ `select * from emp where sal RLIKE '[2]';`
 ### 逻辑运算符（And/Or/Not）
 
 操作符|含义
@@ -154,13 +154,13 @@ NOT|	逻辑否
 **案例实操**
 	（1）查询薪水大于1000，部门是30
 
-`select * from emp where sal>1000 and deptno=30;`
+	`select * from emp where sal>1000 and deptno=30;`
 	（2）查询薪水大于1000，或者部门是30
 
-`select * from emp where sal>1000 or deptno=30;`
+	`select * from emp where sal>1000 or deptno=30;`
 	（3）查询除了20部门和30部门以外的员工信息
 
-` select * from emp where deptno not IN(30, 20);`
+	` select * from emp where deptno not IN(30, 20);`
 ## 分组
 ### Group By语句
     GROUP BY语句通常会和聚合函数一起使用，按照一个或者多个列队结果进行分组，然后对每个组执行聚合操作。
@@ -168,10 +168,10 @@ NOT|	逻辑否
 **案例实操**
 	（1）计算emp表每个部门的平均工资
 
-`select t.deptno, avg(t.sal) avg_sal from emp t group by t.deptno;`
+	`select t.deptno, avg(t.sal) avg_sal from emp t group by t.deptno;`
 	（2）计算emp每个部门中每个岗位的最高薪水
 
-`select t.deptno, t.job, max(t.sal) max_sal from emp t group by t.deptno, t.job;`
+	`select t.deptno, t.job, max(t.sal) max_sal from emp t group by t.deptno, t.job;`
 ### Having语句
  **having与where不同点**
 * where针对表中的列发挥作用，查询数据；having针对查询结果中的列发挥作用，筛选数据。
@@ -183,4 +183,4 @@ NOT|	逻辑否
      `select deptno, avg(sal) from emp group by     deptno;`
 2. 求每个部门的平均薪水大于2000的部门
 
- `select deptno, avg(sal) avg_sal from emp group by deptno having avg_sal > 2000;   `
+     `select deptno, avg(sal) avg_sal from emp group by deptno having avg_sal > 2000;   `
