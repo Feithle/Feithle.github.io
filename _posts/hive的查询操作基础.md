@@ -63,10 +63,13 @@ A&B	|A和B按位取与
 A\|B|A和B按位取或
 A^B|	A和B按位取异或
 ~A	|A按位取反
+
 *案例实操*
+
 查询出所有员工的薪水后加1显示。
 
-`select sal +1 from emp;`
+ `select sal +1 from emp;`
+ 
 ### 常用函数
 * 求总行数（count）
 
