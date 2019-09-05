@@ -49,7 +49,7 @@ SELECT [ALL | DISTINCT] select_expr, select_expr, ...
 4. 案例实操
 *查询名称和部门*
 
-`select ename AS name, deptno dn from emp;`
+ `select ename AS name, deptno dn from emp;`
 ### 算术运算符
 
 运算符|描述
