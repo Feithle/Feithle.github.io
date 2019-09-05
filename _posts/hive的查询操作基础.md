@@ -29,8 +29,10 @@ SELECT [ALL | DISTINCT] select_expr, select_expr, ...
 
 ### 全表和特定列查询
 **全表查询**
+
 `select * from emp;`
 **选择特定列查询**
+
 ` select empno, ename from emp;`
 
     注意
@@ -47,6 +49,7 @@ SELECT [ALL | DISTINCT] select_expr, select_expr, ...
 3. 紧跟列名，也可以在列名和别名之间加入关键字‘AS’ 
 4. 案例实操
 *查询名称和部门*
+
 `select ename AS name, deptno dn from emp;`
 ### 算术运算符
 
@@ -63,17 +66,23 @@ A^B|	A和B按位取异或
 ~A	|A按位取反
 *案例实操*
 	 查询出所有员工的薪水后加1显示。
+	 
 `select sal +1 from emp;`
 ### 常用函数
 * 求总行数（count）
+
 `select count(*) cnt from emp;`
 * 求工资的最大值（max）
+
 `select max(sal) max_sal from emp;`
 * 求工资的最小值（min）
+
 `select min(sal) min_sal from emp;`
 * 求工资的总和（sum）
+
 `select sum(sal) sum_sal from emp; `
 * 求工资的平均值（avg）
+
 `select avg(sal) avg_sal from emp;`
 ### Limit语句
 
