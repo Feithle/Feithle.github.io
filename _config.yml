@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: Feithle’s page,Welcome!
+email: lqy322@gmail.com
+description: Hello! This is my page.
 url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
@@ -14,7 +14,7 @@ keywords: ["blog", "jekyll"]
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Beijing
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,13 +33,13 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
+  name: Feithle
+  avatar: purpleicon.png
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  email: lqy322@gmail.com
   disqus-shortname:
-  twitter: #username
+  twitter: @Eim
   facebook: #username
   google:
     plus: #username
