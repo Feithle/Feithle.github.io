@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Welcome to Jekyll"
+date:   2015-08-18 15:07:19
+categories: [tutorial]
+excerpt: "Welcome to Jekyll,let's begain with this awesome excerpt!"
+comments: true
+---
 ### hive
 #### 简介
 >Apache Hive是一个建立在Hadoop架构之上的数据仓库。它能够提供数据的精炼，查询和分析。
