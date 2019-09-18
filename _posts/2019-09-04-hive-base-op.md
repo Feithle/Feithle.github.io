@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll"
-date:   2015-08-18 15:07:19
+title:  "hive的初级指令"
+date:   2019-09-04 15:07:19
 categories: [tutorial]
-excerpt: "Welcome to Jekyll,let's begain with this awesome excerpt!"
+excerpt: "hive的基础操作：启动、查看、打开、创建、退出"
 comments: true
 ---
 ### hive
