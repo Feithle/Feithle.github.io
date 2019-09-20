@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: "李奇原"
   avatar: zhao.jpg
-  job: "软件工程"
+  job: "-软件工程"
   bio: "石家庄铁道大学软件工程系"
   email: "www.lqy322@gmail.com"
   disqus-shortname:
@@ -63,7 +63,7 @@ owner:
   dribbble: #username
   youtube: #username
   soundcloud: #username
-  weibo: https://www.cnblogs.com/1605-3QYL/
+  weibo: https://weibo.com/u/5995109172/home?wvr=5&sudaref=graph.qq.com
   flickr: #username
   500px: #username
   codepen: #username
