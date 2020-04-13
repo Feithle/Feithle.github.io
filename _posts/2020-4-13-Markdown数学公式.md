@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Markdown 数学公式"
-date: 2020-2-15 9:00:00
+date: 2020-04-13 9:00:00
 categories: [Markdown]
 excerpt: "Markdown 数学公式复制于：https://www.zybuluo.com/codeep/note/163962"
 ---
